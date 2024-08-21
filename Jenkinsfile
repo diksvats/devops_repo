@@ -12,7 +12,7 @@ pipeline {
 
         stage('Build docker image') {
             steps {  
-                sh 'docker build -t dikshavats/newimage:$BUILD_NUMBER'
+                sh 'docker build -t dikshavats/newimage:$BUILD_NUMBER .'
             }
         }
         stage('login to dockerhub') {
