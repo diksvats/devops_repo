@@ -1,5 +1,3 @@
-JENKINS FILE
-
 pipeline {
     agent any 
     environment {
